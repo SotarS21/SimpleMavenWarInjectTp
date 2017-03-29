@@ -10,11 +10,9 @@
     <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
     <param-value>resources.application</param-value>
   </context-param>
-    <!-- Chargement conteneur CDI  -->
-	<listener>
-		<listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
-	</listener>  
-  
+  <listener>
+    <listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
+  </listener>
   <listener>
     <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
   </listener>
@@ -28,6 +26,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
-    <url-pattern>*.xhtml</url-pattern>
+    <url-pattern>/faces/*</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -6,11 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-//Completer pour JSF
-//Completer pour JPA
+@ManagedBean
+@Entity
 public class Student {
 
-	//Completer pour JPA
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String firstName;
 	private String lastName;

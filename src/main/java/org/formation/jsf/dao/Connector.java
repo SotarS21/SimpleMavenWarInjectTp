@@ -157,7 +157,7 @@ public class Connector {
 
 		transaction.begin();
 
-		TypedQuery<Student> query = em.createQuery("SELECT * from Student", Student.class);
+		TypedQuery<Student> query = em.createQuery("from Student", Student.class);
 
 		listStudent = query.getResultList();
 

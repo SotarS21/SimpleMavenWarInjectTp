@@ -43,14 +43,15 @@
 				<h:column>
 					<!-- the column header -->
 					<f:facet name="header">First Name</f:facet>
-
+					<h:outputText value="#{tempStudent.firstName}"></h:outputText>
 					<!--  the value for each row -->
-					#{tempStudent.firstName}
+					
 				</h:column>
 
 				<h:column>
 					<!-- the column header -->
 					<f:facet name="header">Last Name</f:facet>
+					<h:outputText value="#{tempStudent.lastName}"></h:outputText>
 
 					<!--  the value for each row -->
 
@@ -59,6 +60,7 @@
 				<h:column>
 					<!-- the column header -->
 					<f:facet name="header">Email</f:facet>
+					<h:outputText value="#{tempStudent.email}"></h:outputText>
 
 					<!--  the value for each row -->
 
